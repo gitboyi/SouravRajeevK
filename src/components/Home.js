@@ -56,7 +56,9 @@ const Home = () => {
       <Description>
         Discover my work and projects with interactive designs and creative solutions.
       </Description>
-      <Button href="/SouravRajeevK.pdf" download="SouravRajeevK.pdf">Download Resume</Button>
+      <Button href={`${process.env.PUBLIC_URL}/SouravRajeevK.pdf`} download="SouravRajeevK.pdf">
+  Download Resume
+</Button>
     </HomeSection>
   );
 };
