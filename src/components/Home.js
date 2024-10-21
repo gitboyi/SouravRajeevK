@@ -56,7 +56,7 @@ const Home = () => {
       <Description>
         Discover my work and projects with interactive designs and creative solutions.
       </Description>
-      <Button href="/test.pdf" download="Sourav Rajeev K.pdf">Download Resume</Button>
+      <Button href="/SouravRajeevK.pdf" download="SouravRajeevK.pdf">Download Resume</Button>
     </HomeSection>
   );
 };
