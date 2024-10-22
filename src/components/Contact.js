@@ -29,42 +29,57 @@ const TextArea = styled.textarea`
 
 const Button = styled.button`
   padding: 0.7rem;
-  background-color: #333;
+  background-color: #333; /* Default grey color */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 
   &:hover {
-    background-color: #555;
+    background-color: #555; /* Darker grey on hover */
   }
 `;
 
 const SocialButtonsContainer = styled.div`
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 `;
 
 const SocialButton = styled.a`
-  padding: 0.5rem 1rem;
-  background-color: #0072b1; /* Default color for LinkedIn */
+  padding: 0.8rem 2rem;
   color: white;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 0 45%;
+  max-width: 220px;
+  background-color: #333; /* Default grey color */
 
-  &.whatsapp {
-    background-color: #25D366; /* WhatsApp color */
-  }
-
-  &.instagram {
-    background-color: #E1306C; /* Instagram color */
-  }
-
+  /* Hover color changes */
   &:hover {
-    background-color: #005582; /* Darker shade for hover effect */
+    &.whatsapp {
+      background-color: #25D366; /* WhatsApp green */
+    }
+
+    &.instagram {
+      background-color: #E1306C; /* Instagram pink */
+    }
+
+    &.linkedin {
+      background-color: #0072b1; /* LinkedIn blue */
+    }
+
+    &.gmail {
+      background-color: #D44638; /* Gmail red */
+    }
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
   }
 `;
 
@@ -84,7 +99,7 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent page refresh
+    e.preventDefault();
     try {
       const response = await fetch('https://formspree.io/f/mjkvkgaa', {
         method: 'POST',
@@ -140,13 +155,13 @@ const Contact = () => {
         <SocialButton className="whatsapp" href="https://wa.me/+917356694908" target="_blank" rel="noopener noreferrer">
           WhatsApp
         </SocialButton>
-        <SocialButton className="instagram" href="https://www.instagram.com/_mr_journey_/profilecard/?igsh=MW53cTBhYjZ6Z2w5cA==" target="_blank" rel="noopener noreferrer">
+        <SocialButton className="instagram" href="https://www.instagram.com/_mr_journey_/" target="_blank" rel="noopener noreferrer">
           Instagram
         </SocialButton>
-        <SocialButton href="https://www.linkedin.com/in/sourav-rajeev-k-650590128?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+        <SocialButton className="linkedin" href="https://www.linkedin.com/in/sourav-rajeev-k-650590128" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </SocialButton>
-        <SocialButton href="mailto:souravrajeevk7@gmail.com" target="_blank" rel="noopener noreferrer">
+        <SocialButton className="gmail" href="mailto:souravrajeevk7@gmail.com" target="_blank" rel="noopener noreferrer">
           Gmail
         </SocialButton>
       </SocialButtonsContainer>
