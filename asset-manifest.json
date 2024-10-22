@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/SouravRajeevK/static/css/main.e6c13ad2.css",
-    "main.js": "/SouravRajeevK/static/js/main.2a0228ac.js",
+    "main.js": "/SouravRajeevK/static/js/main.3bd910f2.js",
     "static/js/453.ab0e5bed.chunk.js": "/SouravRajeevK/static/js/453.ab0e5bed.chunk.js",
+    "static/media/college.jpg": "/SouravRajeevK/static/media/college.e6490b17edd0443979fe.jpg",
+    "static/media/kannur.jpg": "/SouravRajeevK/static/media/kannur.d7adb633fbdb71913599.jpg",
     "static/media/tictactoe.jpg": "/SouravRajeevK/static/media/tictactoe.c4c63aaeb0a9be5efb7d.jpg",
     "index.html": "/SouravRajeevK/index.html",
     "main.e6c13ad2.css.map": "/SouravRajeevK/static/css/main.e6c13ad2.css.map",
-    "main.2a0228ac.js.map": "/SouravRajeevK/static/js/main.2a0228ac.js.map",
+    "main.3bd910f2.js.map": "/SouravRajeevK/static/js/main.3bd910f2.js.map",
     "453.ab0e5bed.chunk.js.map": "/SouravRajeevK/static/js/453.ab0e5bed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2a0228ac.js"
+    "static/js/main.3bd910f2.js"
   ]
 }
